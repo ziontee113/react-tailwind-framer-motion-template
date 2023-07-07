@@ -1,7 +1,11 @@
+import { motion } from "framer-motion";
+
 function App() {
   return (
     <div className="bg-stone-900 h-screen text-white flex items-center justify-center">
-      <h1 className="text-8xl">Hello World</h1>
+      <motion.h1 initial={{ y: -100 }} animate={{ y: 0 }} className="text-8xl">
+        Hello World
+      </motion.h1>
     </div>
   );
 }
